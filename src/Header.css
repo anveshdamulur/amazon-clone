@@ -61,3 +61,41 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+
+/* responsive */
+
+@media only screen and (max-width: 780px) {
+    .header{
+        background-color: #19191a;
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        /* padding: 10px; */
+        top: 0;
+        z-index: 100;
+        width: 100%;
+    }
+    .header__logo{
+        width: 100%;
+        /* always looks fit if the screen is resize also */
+        margin-top:20px;
+    }
+    .header__search{
+        display: flex;
+        flex: 2;
+        margin-bottom: 10px;
+    }
+    .header__optionLineOne{
+        width: 100%;
+        font-size: 14px;
+    }
+    .header__optionLineTwo{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .header__optionBasket{
+        display: flex;
+        align-items: center;
+        margin: 10px;
+    }
+  }
